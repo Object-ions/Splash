@@ -53,6 +53,10 @@ ul {
   margin: 5px 0 10px 0;
 }
 
+li {
+  font-weight: 300;
+}
+
 .bold {
   font-weight: 700;
 }
