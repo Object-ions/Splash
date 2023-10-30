@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto+Mono:wght@100;200;300&display=swap');
+
+body {
+  background-color: #e0e0e0;
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding: 5px 10px;
+}
+
+a:hover {
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  font-size: 50px;
+  margin: 0 0 15px 0;
+  padding: 0;
+
+}
+
+h2 {
+  font-size: 50px;
+  line-height: 0.85;
+  padding: 0;
+  margin: 0;
+  font-weight: 300;
+  text-align: left;
+}
+
+h3 {
+  font-size: 25px;
+  margin: 20px 0 10px 0;
+}
+
+h4 {
+  margin: 15px 0 5px 0;
+}
+
+p {
+  font-weight: 300;
+  margin: 0 0 5px 0;
+}
+
+ul {
+  list-style-position: inside;
+  padding-left: 5px;
+  margin: 5px 0 10px 0;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.language {
+  text-align: left;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 210px;
+}
+
+/**********************/
+/***** navigation *****/
+/**********************/
+
+/***** top-header *****/
+.top-header h2 {
+  padding-left: 15px;
+  font-size: 35px;
+}
+
+.top-header h5 {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  font-size: 12px;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.top-header h6 {
+  font-size: 15px;
+  text-align: right;
+  margin: 0;
+  padding: 0 25px 0 0 ;
+}
+
+/***** navigation-btm *****/
+.navigation-btm {
+  text-align: left;
+  font-weight: 300;
+  position: absolute;
+  bottom: 10%;
+}
+
+.navigation-btm p {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.resume-link-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* .body-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+} */
+
+.main-container {
+  display: flex;
+  text-align: center;
+  border: 1px solid #ddd;
+  /* padding: 20px; */
+}
+
+/****** portfolios-link-bar ******/
+.portfolios-link-bar div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  width: 60%;
+}
+
+.portfolios-link-bar a {
+  border: 1px solid black;
+  color: black;
+  margin-right: 10px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.portfolios-link-bar a:hover {
+  color: white;
+  background-color: black;
+}
+
+a.code-link {
+  background-color: black;
+  color: white;
+}
+
+a.code-link:hover {
+  border: 1px white dashed;
+}
+
+.portfolios-link-bar a.resume-link {
+  position: relative;
+  bottom: -10px;
+  font-size: 13px;
+  border: none;
+}
+
+/**********************/
+/***** main-body ******/
+/**********************/
+.main-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  /* margin: 50% 0 20% 0; */
+}
+
+#header-1 { margin-left: 15%;}
+#header-2 { margin-left: 5%;}
+#header-3 { margin-left: 20%;}
+#header-4 { margin-left: 18%;}
+#header-5 { margin-left: 2%;}
+#header-6 { margin-left: -4%;}
+#header-7 { margin-left: 15%;}
+#header-8 { margin-left: 2%;}
+
+.dynamic-text {
+  text-align: left;
+}
+
+/**********************/
+/***** side-code ******/
+/**********************/
+.side-code {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dashed-div {
+  height: 450px;
+  overflow: auto;
+  position: relative;
+  width: 70%;
+  margin-top: 50%;
+  padding: 15px;
+  border: none;
+  background:
+    /* Top border */
+    repeating-linear-gradient(to right,
+      black, black 10px,
+      transparent 10px, transparent 26px) 0 0/100% 1px no-repeat,
+
+    /* Bottom border */
+    repeating-linear-gradient(to right,
+      black, black 10px,
+      transparent 10px, transparent 26px) 0 100%/100% 1px no-repeat,
+
+    /* Left border */
+    repeating-linear-gradient(to bottom,
+      black, black 10px,
+      transparent 10px, transparent 26px) 0 0/1px 100% no-repeat,
+
+    /* Right border */
+    repeating-linear-gradient(to bottom,
+      black, black 10px,
+      transparent 10px, transparent 26px) 100% 0/1px 100% no-repeat;
+}
+
+/**********************/
+/******* decors *******/
+/**********************/
+.decor-left {
+  display: flex;
+  margin: 0;
+}
+
+.decor-right {
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+}
+
+/****** Flex rules ******/
+.body-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+
+.row-6 {
+  width: 6%;
+}
+
+.row-12 {
+  width: 12.5%;
+}
+
+.row-25 {
+  width: 25%;
+}
+
+.row-50 {
+  width: 50%;
+}
+
+/******** square divs ********/
+.reg-sq {
+  margin-left: 30px;
+}
+
+.black-square {
+  height: 25px;
+  width: 25px;
+  background-color: black;
+  border: 1px solid black;
+}
+
+.white-square {
+  margin-top: 120px;
+  height: 25px;
+  width: 25px;
+  background-color: none;
+  border: 1px solid black;
+}
+
+.dashed-square {
+  width: 25px;
+  height: 25px;
+  background-color: #e0e0e0;
+  position: absolute;
+}
+
+#square-5 {
+  position: relative;
+  bottom: 150px
+}
+
+#square-6 {
+  width: 25px;
+  height: 25px;
+  background-color: #e0e0e0;
+  position: absolute;
+  bottom: 10px;
+}
+
+.corner {
+  width: 5px;
+  height: 5px;
+  position: absolute;
+}
+
+.top-left {
+  border-left: 1px dashed black;
+  border-top: 1px dashed black;
+  top: 0;
+  left: 0;
+}
+
+.top-right {
+  border-right: 1px dashed black;
+  border-top: 1px dashed black;
+  top: 0;
+  right: 0;
+}
+
+.bottom-left {
+  border-left: 1px dashed black;
+  border-bottom: 1px dashed black;
+  bottom: 0;
+  left: 0;
+}
+
+.bottom-right {
+  border-right: 1px dashed black;
+  border-bottom: 1px dashed black;
+  bottom: 0;
+  right: 0;
+}
+
+#dollar {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+}
+
+/**********************/
+/******* typing *******/
+/**********************/
+
+.mock-code {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.mock-code pre {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.mock-code code {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.blinking-cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+
+  0%,
+  49% {
+    color: transparent;
+  }
+
+  50%,
+  100% {
+    color: black;
+  }
+}
