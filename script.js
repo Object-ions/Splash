@@ -6,7 +6,6 @@ const skills = document.getElementById("skills");
 const projects = document.getElementById("projects");
 const languages = document.getElementById("languages");
 
-const squareVertical = document.getElementById('square-3');
 const squareHorizontal = document.getElementById('square-6');
 
 // Get target content div element
@@ -84,15 +83,15 @@ const projectsContent =`
   <h4>Plant Professor:<a href="#"">(GitHub)</a></h4>
   <p>Web application that provides information on plants using fetch API. Built using vanilla JavaScript.</p>
   
-  <h4>Pig Dice: <a href="#"">(GitHub)</a></h4> <p>Interactive, two-player dice game, created using HTML, CSS, and vanilla JavaScript.</p>
+  <h4>Pig Dice: <a href="https://github.com/Object-ions/Pig-Dice"">(GitHub)</a></h4> <p>Pig Dice is a simple dice game creates with vanilla JavaScript. Two players take turns to roll a single six-sided die.</p>
 
-  <h4>Console App:<a href="#"">(GitHub)</a></h4>
-  <p>Web application that provides information on plants using fetch API. Built using vanilla JavaScript.</p>
+  <h4>Pierres Bakery (Console Application):<a href="https://github.com/Object-ions/PierresBakery.git" target="_blank">(GitHub)</a></h4>
+  <p>This C# console application helps customers place their orders and calculate the total cost.</p>
 
-  <h4>API:<a href="#"">(GitHub)</a></h4>
-  <p>Web application that provides information on plants using fetch API. Built using vanilla JavaScript.</p>
+  <h4>Animal Shelter (API):<a href="https://github.com/Object-ions/AnimalShelter.Solution"">(GitHub)</a></h4>
+  <p>A web Api (only) that allows the user to make API calls in order to check the animal shelter database.</p>
   
-  <h4>MVC Web Application:<a href="#"">(GitHub)</a></h4> 
+  <h4>Pierre's Sweet and Savory Treats- (MVC Web Application):<a href="#"">(GitHub)</a></h4> 
   <p>Web application that provides information on plants using fetch API. Built using vanilla JavaScript.</p>
 `;
 
@@ -129,6 +128,22 @@ function replaceElements(event) {
   }
 }
 
+// const textToType = `
+  
+// `;
+// let currentIndex = 0;
+// const typingElement = document.getElementById("typing-text");
+
+// function typeLetter() {
+//   if (currentIndex < textToType.length) {
+//     typingElement.textContent += textToType[currentIndex];
+//     currentIndex++;
+//     setTimeout(typeLetter, 100);
+//   }
+// }
+
+// typeLetter(); // Start typing.
+
 // Event listeners
 professional.addEventListener("click", replaceElements);
 education.addEventListener("click", replaceElements);
@@ -137,51 +152,6 @@ skills.addEventListener("click", replaceElements);
 projects.addEventListener("click", replaceElements);
 
 document.addEventListener('mousemove', function(event) {
-  squareVertical.style.top = event.clientY + 'px';
-});
-
-document.addEventListener('mousemove', function(event) {
   const newLeft = event.clientX - squareHorizontal.offsetWidth / 2;
   squareHorizontal.style.left = newLeft + 'px';
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  const codeToType = `
-    const me = {
-    name: 'Moses Poston',
-    isDynamic: true,
-    isMotivated: true,
-    hasDesignBackground: true,
-    skills: ['C#', 'ASP.NET', 'MySQL', 'React', 'HTML', 'CSS', 'JavaScript', 'JQuery', 'BASH'],
-    hasDesignExperience: true,
-    hasSalesExperience: true,
-    hasDevelopmentExperience: true,
-    hasLeadershipExperience: true,
-    languages: ['Hebrew', 'English'],
-    projects: ['Plant Professor', 'Pig Dice']
-  `;
-
-  const mockCodeElement = document.querySelector('.mock-code pre code');
-  mockCodeElement.innerHTML = '';
-  const cursor = document.createElement('span');
-  cursor.textContent = '|';
-  cursor.className = 'blinking-cursor';
-  mockCodeElement.appendChild(cursor);
-
-  let currentIndex = 0;
-
-  function typeLetter() {
-    if (currentIndex < codeToType.length) {
-      if (codeToType[currentIndex] === ' ') {
-        mockCodeElement.insertBefore(document.createTextNode(' '), cursor); // Note: ' ' is a non-breaking space
-      } else {
-        mockCodeElement.insertBefore(document.createTextNode(codeToType[currentIndex]), cursor);
-      }
-      currentIndex++;
-      setTimeout(typeLetter, 50);
-    } else {
-      cursor.remove();
-    }
-  }
-  typeLetter();
 });
