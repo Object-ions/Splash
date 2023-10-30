@@ -6,6 +6,9 @@ const skills = document.getElementById("skills");
 const projects = document.getElementById("projects");
 const languages = document.getElementById("languages");
 
+const darkMode = document.getElementById('square-1');
+const lightMode = document.getElementById('square-2');
+
 const squareHorizontal = document.getElementById('square-6');
 
 // Get target content div element
@@ -91,7 +94,7 @@ const projectsContent =`
   <h4>Animal Shelter (API):<a href="https://github.com/Object-ions/AnimalShelter.Solution"">(GitHub)</a></h4>
   <p>A web Api (only) that allows the user to make API calls in order to check the animal shelter database.</p>
   
-  <h4>Pierre's Sweet and Savory Treats- (MVC Web Application):<a href="#"">(GitHub)</a></h4> 
+  <h4>Pierre's SST- (MVC Web Application):<a href="#"">(GitHub)</a></h4> 
   <p>Web application that provides information on plants using fetch API. Built using vanilla JavaScript.</p>
 `;
 
@@ -101,6 +104,22 @@ const languagesContent = `
   <h4>English:</h4> <p>Fluent</p>
   </div>
 `;
+
+const textToType = `
+  Dynamic and highly-motivated Full-Stack Developer with a strong design background and entrepreneurial spirit.
+
+Excellent problem-solving skills with a detail-oriented approach. Equipped with diverse work experience, ranging from design and development to customer service and sales management. Adept at leveraging tech proficiency and leadership abilities to drive business growth, client retention, and team success.
+`;
+let currentIndex = 0;
+const typingElement = document.getElementById("typing-text");
+
+function typeLetter() {
+  if (currentIndex < textToType.length) {
+    typingElement.textContent += textToType[currentIndex];
+    currentIndex++;
+    setTimeout(typeLetter, 50);
+  }
+}
 
 function replaceElements(event) {
   switch(event.target.id) {
@@ -128,20 +147,12 @@ function replaceElements(event) {
   }
 }
 
-const textToType = `
-  Dynamic and highly-motivated Full-Stack Developer with a strong design background and entrepreneurial spirit.
+function enableDarkMode() {
+  document.body.classList.add('dark-mode');
+}
 
-Excellent problem-solving skills with a detail-oriented approach. Equipped with diverse work experience, ranging from design and development to customer service and sales management. Adept at leveraging tech proficiency and leadership abilities to drive business growth, client retention, and team success.
-`;
-let currentIndex = 0;
-const typingElement = document.getElementById("typing-text");
-
-function typeLetter() {
-  if (currentIndex < textToType.length) {
-    typingElement.textContent += textToType[currentIndex];
-    currentIndex++;
-    setTimeout(typeLetter, 50);
-  }
+function disableDarkMode() {
+  document.body.classList.remove('dark-mode');
 }
 
 typeLetter();
@@ -152,6 +163,11 @@ education.addEventListener("click", replaceElements);
 experience.addEventListener("click", replaceElements);
 skills.addEventListener("click", replaceElements);
 projects.addEventListener("click", replaceElements);
+languages.addEventListener("click", replaceElements);
+
+darkMode.addEventListener('click', enableDarkMode);
+lightMode.addEventListener('click', disableDarkMode);
+
 
 document.addEventListener('mousemove', function(event) {
   const newLeft = event.clientX - squareHorizontal.offsetWidth / 2;

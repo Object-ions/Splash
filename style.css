@@ -127,6 +127,7 @@ ul {
   display: flex;
   flex-direction: column;
   margin-left: 10px;
+  margin-top: 15px;
   width: 60%;
 }
 
@@ -183,6 +184,7 @@ a.code-link:hover {
 
 .dynamic-text {
   text-align: left;
+  margin-top: 30px;
 }
 
 /**********************/
@@ -282,6 +284,10 @@ a.code-link:hover {
   height: 25px;
   background-color: #e0e0e0;
   position: absolute;
+}
+
+#square-5 {
+  margin-top: 25px;
 }
 
 #square-6 {
