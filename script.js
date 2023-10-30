@@ -123,26 +123,28 @@ function replaceElements(event) {
       targetDiv.innerHTML = languagesContent;
     break;
     default:
-      targetDiv.innerHTML = professionalContent;
+      targetDiv.innerHTML = "";
     break;
   }
 }
 
-// const textToType = `
-  
-// `;
-// let currentIndex = 0;
-// const typingElement = document.getElementById("typing-text");
+const textToType = `
+  Dynamic and highly-motivated Full-Stack Developer with a strong design background and entrepreneurial spirit.
 
-// function typeLetter() {
-//   if (currentIndex < textToType.length) {
-//     typingElement.textContent += textToType[currentIndex];
-//     currentIndex++;
-//     setTimeout(typeLetter, 100);
-//   }
-// }
+Excellent problem-solving skills with a detail-oriented approach. Equipped with diverse work experience, ranging from design and development to customer service and sales management. Adept at leveraging tech proficiency and leadership abilities to drive business growth, client retention, and team success.
+`;
+let currentIndex = 0;
+const typingElement = document.getElementById("typing-text");
 
-// typeLetter(); // Start typing.
+function typeLetter() {
+  if (currentIndex < textToType.length) {
+    typingElement.textContent += textToType[currentIndex];
+    currentIndex++;
+    setTimeout(typeLetter, 50);
+  }
+}
+
+typeLetter();
 
 // Event listeners
 professional.addEventListener("click", replaceElements);

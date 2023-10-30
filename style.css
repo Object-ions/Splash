@@ -335,7 +335,7 @@ a.code-link:hover {
 /******* typing *******/
 /**********************/
 
-/* @keyframes blink {
+@keyframes blink {
   0%,
   100% {
     opacity: 1;
@@ -360,4 +360,4 @@ a.code-link:hover {
   margin: 0;
   padding: 0;
   overflow: hidden;
-} */
+}
