@@ -14,17 +14,17 @@ _Live demo: [GH-pages](https://github.com/Object-ions/Splash.git)_
 
 ## Features
 
-- **Dark Mode & Light Mode**: Enhances user experience by providing UI themes suitable for different lighting conditions.
-  - **Dark Mode Preview**:
-    ![Dark Mode Example](https://github.com/Object-ions/Splash/blob/main/img/darkMode.png)
-  - **Light Mode Preview**:
-    ![Light Mode Example](https://github.com/Object-ions/Splash/blob/main/img/lightMode.png)
 - **Dynamic Splash Header**: Introducing Moses Poston, Full-Stack Developer and Industrial Designer.
 - **Interactive Navigation**: Links to Professional Summary, Education, Experience, Skills, Projects, and Languages sections.
 - **Portfolios Access**: Direct links to code and design portfolios.
 - **Downloadable Resume**: A direct link to download the comprehensive resume in PDF format.
 - **Dynamic Text Section**: An area designed to showcase dynamic content.
 - **Side Code Animation**: A mock code typing animation for a technological feel.
+- **Dark Mode & Light Mode**: Enhances user experience by providing UI themes suitable for different lighting conditions.
+  - **Dark Mode Preview**:
+    ![Dark Mode Example](https://github.com/Object-ions/Splash/blob/main/img/darkMode.png)
+  - **Light Mode Preview**:
+    ![Light Mode Example](https://github.com/Object-ions/Splash/blob/main/img/lightMode.png)
 
 ## Setup/Installation Requirements
 
