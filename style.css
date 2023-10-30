@@ -9,6 +9,7 @@ a {
   text-decoration: none;
   color: black;
   padding: 5px 10px;
+  cursor: pointer;
 }
 
 a:hover {
@@ -118,7 +119,6 @@ ul {
 .main-container {
   display: flex;
   text-align: center;
-  border: 1px solid #ddd;
   /* padding: 20px; */
 }
 
@@ -265,6 +265,7 @@ a.code-link:hover {
 }
 
 .black-square {
+  cursor: pointer;
   height: 25px;
   width: 25px;
   background-color: black;
@@ -273,6 +274,7 @@ a.code-link:hover {
 }
 
 .white-square {
+  cursor: pointer;
   height: 25px;
   width: 25px;
   background-color: none;
@@ -335,6 +337,8 @@ a.code-link:hover {
 #dollar {
   font-family: 'Roboto Mono', monospace;
   font-size: 20px;
+  position: relative;
+  top: -5px;
 }
 
 /**********************/
@@ -366,4 +370,71 @@ a.code-link:hover {
   margin: 0;
   padding: 0;
   overflow: hidden;
+}
+
+/**********************/
+/***** drk mode *******/
+/**********************/
+
+.dark-mode {
+  background-color: #1f1f1f;
+  color: white;
+}
+
+.dark-mode a{
+  color: white;
+}
+
+.dark-mode a:hover{
+  background-color: #40E0D0;
+  color: #1f1f1f;
+}
+
+.dark-mode .portfolios-link-bar a:hover {
+  color: #1f1f1f;
+  background-color: #40E0D0;
+}
+.dark-mode a.code-link {
+  background-color: white;
+  color: #1f1f1f;
+}
+
+.dark-mode .dashed-div {
+  background:
+    repeating-linear-gradient(to right,
+      #40E0D0, #40E0D0 10px,
+      transparent 10px, transparent 26px) 0 0/100% 1px no-repeat,
+    repeating-linear-gradient(to right,
+      #40E0D0, #40E0D0 10px,
+      transparent 10px, transparent 26px) 0 100%/100% 1px no-repeat,
+    repeating-linear-gradient(to bottom,
+      #40E0D0, #40E0D0 10px,
+      transparent 10px, transparent 26px) 0 0/1px 100% no-repeat,
+    repeating-linear-gradient(to bottom,
+      #40E0D0, #40E0D0 10px,
+      transparent 10px, transparent 26px) 100% 0/1px 100% no-repeat;
+}
+
+.dark-mode .black-square {
+  background-color: #40E0D0;
+  border: 1px solid #40E0D0;
+}
+
+.dark-mode .white-square {
+  border: 1px solid #FF4500;
+}
+
+.dark-mode .top-left,
+.dark-mode .top-right,
+.dark-mode .bottom-left,
+.dark-mode .bottom-right {
+  border-color: #40E0D0;
+}
+
+.dark-mode .blinking-cursor {
+  background-color: #40E0D0;
+}
+
+.dark-mode #square-6 {
+  background-color: #1f1f1f;
 }
