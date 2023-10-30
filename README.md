@@ -4,7 +4,7 @@
 
 This repo is my resume page (aka Object-ions). This page is an online representation of my professional journey, skillset, and portfolio.
 
-_Live demo: [GH-pages](https://github.com/Object-ions/Splash.git)_
+_Live demo: [GH-pages](https://object-ions.github.io/Splash/)_
 
 ## Technologies Used
 
