@@ -6,6 +6,8 @@ const skills = document.getElementById("skills");
 const projects = document.getElementById("projects");
 const languages = document.getElementById("languages");
 
+const contact = document.getElementById("contact");
+
 const darkMode = document.getElementById('square-1');
 const lightMode = document.getElementById('square-2');
 
@@ -105,10 +107,17 @@ const languagesContent = `
   </div>
 `;
 
+const contactContent = `
+  <div class="Contact me">
+  <h4>Phone:</h4> <p>+1 (925) 323-1356</p>
+  <h4>E-mail:</h4> <p>moshikoatia@gmail.com</p>
+  </div>
+`;
+
 const textToType = `
   Dynamic and highly-motivated Full-Stack Developer with a strong design background and entrepreneurial spirit.
 
-Excellent problem-solving skills with a detail-oriented approach. Equipped with diverse work experience, ranging from design and development to customer service and sales management. Adept at leveraging tech proficiency and leadership abilities to drive business growth, client retention, and team success.
+  Excellent problem-solving skills with a detail-oriented approach. Equipped with diverse work experience, ranging from design and development to customer service and sales management. Adept at leveraging tech proficiency and leadership abilities to drive business growth, client retention, and team success.
 `;
 let currentIndex = 0;
 const typingElement = document.getElementById("typing-text");
@@ -141,6 +150,9 @@ function replaceElements(event) {
     case "languages":
       targetDiv.innerHTML = languagesContent;
     break;
+    case "contact":
+      targetDiv.innerHTML = contactContent;
+    break;
     default:
       targetDiv.innerHTML = "";
     break;
@@ -164,6 +176,7 @@ experience.addEventListener("click", replaceElements);
 skills.addEventListener("click", replaceElements);
 projects.addEventListener("click", replaceElements);
 languages.addEventListener("click", replaceElements);
+contact.addEventListener("click", replaceElements);
 
 darkMode.addEventListener('click', enableDarkMode);
 lightMode.addEventListener('click', disableDarkMode);
